@@ -1,9 +1,8 @@
 //------WAVE ANIMATION------------
-
+/*
 .Card-hero {
   position: relative;
   height: 300px;
-  border: 2px solid yellow;
 }
 
 .Card-hero-wave {
@@ -31,14 +30,6 @@
     background: transparentize(#000b18, 0.5);
     animation: waves 16s infinite linear;
   }
-
-  @include respond(phone) {
-    top: -10%;
-    left: 50%;
-    width: 500px;
-    height: 500px;
-    border: 2px solid white;
-  }
 }
 
 @keyframes waves {
@@ -46,7 +37,7 @@
     transform: translate(-50%, -50%) rotate(360deg);
   }
 }
-
+*/
 //-----------TEXT AND BOTTOM ANIMATION WITH KEYFRAMES----------------
 
 @keyframes moveInLeft {
