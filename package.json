@@ -23,6 +23,7 @@
     "postcss-cli": "^4.1.1"
   },
   "dependencies": {
+    "@fortawesome/fontawesome-free": "^5.15.4",
     "live-server": "^1.2.1"
   }
 }
