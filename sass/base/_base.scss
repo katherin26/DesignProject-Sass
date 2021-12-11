@@ -8,6 +8,8 @@ html {
   font-size: 62.5%;
   width: 100%;
   height: 100%;
+  display: flex;
+  justify-content: center;
 
   @include respond(big-desktop) {
     //1 rem = 12px, 12/16=75%
@@ -31,7 +33,7 @@ html {
 }
 
 body {
-  border: 2px solid orange;
+  width: 100%;
   background-image: linear-gradient(
       rgba($color-primary, 0.7),
       rgba($color-tertiary, 0.7)
@@ -44,17 +46,16 @@ body {
 
 header {
   width: 100%;
-  height: 10rem;
-  border: 2px solid red;
+  height: 5rem;
 }
 
 .text-box {
-  border: 2px solid pink;
+  height: 35rem;
   &__container {
-    border: 2px solid green;
     display: flex;
     justify-content: center;
     flex-direction: column;
+    height: 100%;
   }
 }
 
@@ -63,20 +64,41 @@ header {
   justify-content: center;
   flex-direction: column;
   align-items: center;
+  color: $color-white;
+  text-transform: uppercase;
+  backface-visibility: hidden;
   &--main {
-    border: 2px solid yellow;
+    font-size: 5rem;
+    font-weight: 400;
+    letter-spacing: 2.5rem;
+    animation-name: moveInLeft;
+    animation-duration: 2s;
+    animation-timing-function: ease-out;
+    margin-top: 2rem;
   }
   &--sub {
-    border: 2px solid yellowgreen;
+    font-size: 1.2rem;
+    font-weight: 700;
+    letter-spacing: 1.75rem;
+    animation: moveInright 2s ease-out;
+    margin-top: 2rem;
   }
 }
 
 .button-container {
-  border: 2px solid bisque;
   display: flex;
   justify-content: center;
+  margin-top: 1rem;
 }
 
-.heading-tertiary {
-  border: 2px solid aqua;
+footer {
+  height: 8rem;
+  bottom: 2rem;
+  font-size: 2rem;
+  font-weight: 700;
+  letter-spacing: 0.5rem;
+  color: $color-white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
