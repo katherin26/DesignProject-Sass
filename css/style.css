@@ -67,7 +67,10 @@ body {
   border: 2px solid pink; }
   .header__logo-box {
     width: 100%;
-    border: 2px solid yellow; }
+    border: 2px solid yellow;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between; }
   .header__logo {
     width: 5em;
     height: 5rem;
@@ -238,7 +241,10 @@ body {
   border: 2px solid pink; }
   .header__logo-box {
     width: 100%;
-    border: 2px solid yellow; }
+    border: 2px solid yellow;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between; }
   .header__logo {
     width: 5em;
     height: 5rem;
