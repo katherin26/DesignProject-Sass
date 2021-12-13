@@ -1,0 +1,13 @@
+.text-box {
+  //border: 2px solid pink;
+  position: absolute;
+  top: 45%;
+  text-align: center;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  &__container {
+    position: relative;
+    width: 100%;
+  }
+}

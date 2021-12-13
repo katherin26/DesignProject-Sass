@@ -1,121 +1,49 @@
 *,
 *::after,
 *::before {
-  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
 }
 
 html {
+  height: 100vh;
   font-size: 62.5%;
-  width: 100%;
-  height: 100%;
-  display: flex;
-  justify-content: center;
-  border: 2px solid pink;
-
-  @include respond(big-desktop) {
-    //1 rem = 12px, 12/16=75%
-    font-size: 100%;
-  }
 
   @include respond(tab-land) {
-    //1 rem = 12px, 12/16=75%
-    font-size: 75%;
+    //1 rem = 9px, 9/16=56.25%
+    font-size: 56.25%; //width < 1200 ?
   }
-
   @include respond(tab-port) {
     //1 rem = 8px, 8/16=50%
     font-size: 50%; //width < 900?
   }
 
-  @include respond(phone) {
-    //1 rem = 9px, 9/16=56.25%
-    font-size: 56.25%; //width < 1200 ?
+  @include respond(big-desktop) {
+    //1 rem = 12px, 12/16=75%
+    font-size: 75%;
   }
 }
 
 body {
-  border: 2px solid green;
+  box-sizing: border-box;
+  padding: 3rem;
   width: 100%;
+  height: 100%;
+
   background-image: linear-gradient(
       rgba($color-primary, 0.7),
       rgba($color-tertiary, 0.7)
     ),
-    url(https://vsthemes.org/uploads/posts/2020-03/1584197702_screenshot_2.jpg);
+    url(https://i.pinimg.com/originals/eb/0f/ef/eb0fef9fbf611f9ddc5921dc778fcfdb.jpg);
   background-size: cover;
-  background-repeat: no-repeat;
   background-position: center;
+  background-repeat: no-repeat;
 }
 
-.header {
-  border: 2px solid pink;
-  &__logo-box {
-    width: 100%;
-    border: 2px solid yellow;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-  }
-  &__logo {
-    width: 5em;
-    height: 5rem;
-    border: 2px solid red;
-  }
-}
-
-.text-box {
-  border: 2px solid orange;
-  height: 35rem;
-  &__container {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    height: 100%;
-  }
-}
-
-.heading-primary {
+.container {
   display: flex;
   justify-content: center;
-  flex-direction: column;
-  align-items: center;
-  color: $color-white;
-  text-transform: uppercase;
-  backface-visibility: hidden;
-  &--main {
-    font-size: 5rem;
-    font-weight: 400;
-    letter-spacing: 2.5rem;
-    animation-name: moveInLeft;
-    animation-duration: 2s;
-    animation-timing-function: ease-out;
-    margin-top: 2rem;
-  }
-  &--sub {
-    font-size: 1.2rem;
-    font-weight: 700;
-    letter-spacing: 1.75rem;
-    animation: moveInright 2s ease-out;
-    margin-top: 2rem;
-  }
-}
-
-.button-container {
-  // border: 2px solid red;
-  display: flex;
-  justify-content: center;
-  margin-top: 4rem;
-}
-
-footer {
-  border: 2px solid white;
-  height: 7.5rem;
-  bottom: 1rem;
-  font-size: 1rem;
-  font-weight: 700;
-  letter-spacing: 0.5rem;
-  color: $color-white;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding-top: 4rem;
+  position: relative;
+  height: 100vh;
 }
