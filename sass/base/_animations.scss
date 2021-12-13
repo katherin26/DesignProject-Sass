@@ -12,6 +12,12 @@
     opacity: 1;
     transform: translate(0);
   }
+
+  @include respond(phone) {
+    100% {
+      transform: translate(30rem);
+    }
+  }
 }
 
 @keyframes moveInright {
