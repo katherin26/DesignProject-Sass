@@ -23,6 +23,7 @@
     letter-spacing: 1.75rem;
     animation: moveInright 2s ease-out;
     text-shadow: 1px 1px $color-grey-light;
+    line-height: 3rem;
   }
 
   @include respond(phone) {
