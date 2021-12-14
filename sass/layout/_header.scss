@@ -1,0 +1,18 @@
+.header {
+  color: $color-white;
+  font-size: 4rem;
+  &__logo-box {
+    position: absolute;
+    top: 4rem;
+    left: 4rem;
+  }
+
+  @include respond(phone) {
+    font-size: 6rem;
+    &__logo-box {
+      top: 8rem;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+  }
+}

@@ -20,7 +20,7 @@
     transition: all 0.2s;
     position: relative;
     font-size: $default-font-size;
-    margin: 0.5rem;
+    margin: 2rem;
 
     &:hover {
       transform: translateY(-1px);
@@ -52,7 +52,8 @@
 
   &--white {
     background-color: $color-white;
-    color: $color-grey-dark;
+    color: $color-primary;
+    text-shadow: 0.2px 0.2px $color-grey-light;
 
     &::after {
       background-color: $color-white;
