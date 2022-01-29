@@ -4,9 +4,44 @@
   position: fixed;
   width: 100%;
   height: 5rem;
-  bottom: 1rem;
-  // border: 2px solid red;
+  bottom: 3rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.nav-footer {
+  list-style: none;
   display: flex;
   justify-content: center;
-  align-items: center;
+
+  &__link:link,
+  &__link:visited {
+    font-size: 1.4rem;
+    color: var(--color-white);
+    text-decoration: none;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 1rem;
+    display: block;
+    transition: all 0.2s;
+  }
+
+  &__link:hover,
+  &__link:active {
+    background-color: rgba(
+      $color-white,
+      0.05
+    ); // se coloca sin var porque cuando se usa rgba la sintaxis no funciona.
+    transform: translateY(-3px);
+  }
+}
+
+.copyright {
+  font-size: 1.4rem;
+  color: var(--color-grey-light-2);
+  margin-top: 1rem;
+  margin-right: auto;
+  margin-left: auto;
+  text-align: center;
+  width: 70%;
 }
